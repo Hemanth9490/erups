@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/slideshow.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>E-Shop | Home :: BY ERUPS</title>
+    <style>
+        .bs-example {
+            margin: 20px;
+        }
+        
+        .accordion .fa {
+            margin-right: 0.5rem;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, sans-serif;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        /* Slideshow container */
+        
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        /* Caption text */
+        
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active {
+            background-color: #110f0f;
+        }
+        /* Fading animation */
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 2.0s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        /* On smaller screens, decrease text size */
+        
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.show").each(function() {
+                $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function() {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+            }).on('hide.bs.collapse', function() {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+            });
+        });
+    </script>
+
+</head>
+
+<body class="bg">
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img src="../image/logo/logo_back_erups_black.png" height="80"></a>
+            <a class="navbar-brand" href="eshopindex.html"><img src="../image/logo/logo_grocery store_white_bold.png" height="80"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon" style="color: black;"><i class="fa fa-bars fa-lg "></i></span>
+            </button>
+
+            <a href=https://api.whatsapp.com/send?phone=+919490403329&text=&source=&data=&app_absent=><span  style="color:#00ff00;"><i class="fa fa-whatsapp fa-lg "></i></span><i class="fa fa-phone fa-lg "></i></span><strong><span style="color: white;"> +91 9490403329</span></strong><br></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item "><a class="nav-link" href="#"> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"> About eshop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="our_services.html">Our services</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html"></span> Contact us</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <br><br><br>
+    <!--
+   
+-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="../img/grocery.jpg" width="100%" height="200px">
+        </div>
+        <div class="mySlides fade">
+            <img src="../img/Fruits.jpg" width="100%" height="200px">
+        </div>
+        <div class="mySlides fade">
+            <img src="../img/vegetables.jpg" width="100%" height="200px">
+        </div>
+        <div class="mySlides fade">
+            <img src="../img/bakery.jpg" width="100%" height="200px">
+        </div>
+        <div class="mySlides fade">
+            <img src="../img/non_veg.jpg" width="100%" height="200px">
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div class="container">
+        <div class="tab">
+
+            <button class="tablinks" onclick="openProduct(event, 'Vegetables')">Vegetables</button>
+            <button class="tablinks" onclick="openProduct(event, 'Fruits')">Fruits</button>
+            <button class="tablinks" onclick="openProduct(event, 'Groceries')">Groceries</button>
+            <button class="tablinks" onclick="openProduct(event, 'Non-Veg')">Non-Veg</button>
+            <button class="tablinks" onclick="openProduct(event, 'Bakery Items')">Bakery Items</button>
+            <button class="tablinks" onclick="openProduct(event, 'Packet Items')">Packet Items</button>
+        </div>
+
+        <div id="Vegetables" class="tabcontent">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered scroll">
+                        <thead>
+                            <tr>
+                                <th class="price"><b>Vegetable Name</b></th>
+                                <th class="price"><b>Quantity</b></th>
+                                <th class="price"><b>Price</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <p style="text-align: center;"><strong>Note:-</strong>All these prices are not long Every time will change</p>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/brin.jpg" class="img-fluid" alt="Brinjal">&nbsp;&nbsp;Brinjal / వంకాయ</td>
+                                <td> 1 kg</td>
+                                <td> Rs 30.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/ridge.jpg" class="img-fluid" alt="Ridge Gourd">&nbsp;&nbsp;RidgeGourd / బీరకాయ</td>
+                                <td> 1 kg </td>
+                                <td>Rs 37.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/snake.jpg" class="img-fluid" alt="Snake Gourd">&nbsp;&nbsp;Snake Gourd / పొట్లకాయ</td>
+                                <td> 1 kg</td>
+                                <td>Rs 29.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/capsicum.jpg" class="img-fluid" alt="Capsicum">&nbsp;&nbsp;Capsicum / బెంగుళూరు మిరపకాయ</td>
+                                <td>1 kg</td>
+                                <td>Rs 48.00 </td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/cabbage.jpg" class="img-fluid" alt="Cabbage">&nbsp;&nbsp;Cabbage / క్యాబేజీ</td>
+                                <td>1 kg</td>
+                                <td>Rs 28.00 </td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/cauli.jpg" class="img-fluid" alt="Cauliflower">&nbsp;&nbsp;Cauliflower / కాలీఫ్లవర్ </td>
+                                <td>1 kg</td>
+                                <td> Rs 25.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/carrot.jpg" class="img-fluid" alt="Carrot">&nbsp;&nbsp;Carrot / క్యారెట్</td>
+                                <td> 1 kg</td>
+                                <td>Rs 44.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/peas.jpg" class="img-fluid" alt="Green Peas">&nbsp;&nbsp;Green Peas / బటానీలు</td>
+                                <td> 1 No</td>
+                                <td>Rs 55.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/lemon.jpg" class="img-fluid" alt="Lemon">&nbsp;&nbsp;Lemon / నిమ్మకాయ</td>
+                                <td> 1 No</td>
+                                <td>Rs 4.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/onion.jpg" class="img-fluid" alt="Onion">&nbsp;&nbsp;Onion / ఉల్లిపాయ</td>
+                                <td> 1 kg</td>
+                                <td>Rs 25.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/garlic.jpg" class="img-fluid" alt="Garlic">&nbsp;&nbsp;Garlic / వెల్లుల్లి</td>
+                                <td> 1 kg</td>
+                                <td>Rs 235.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/potato.jpg" class="img-fluid" alt="Potato">&nbsp;&nbsp;Potato / బంగాళాదుంప</td>
+                                <td> 1 kg</td>
+                                <td>Rs 33.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/tomato.jpg" class="img-fluid" alt="Tomato">&nbsp;&nbsp;Tomato / టమోటా</td>
+
+                                <td> 1 kg</td>
+                                <td>Rs 40.00</td>
+                                <tr>
+                                    <td><img src="../img/beans.jpg" class="img-fluid" alt="Beans">&nbsp;&nbsp;Beans / బీన్స్</td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 51.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/cucumber.jpg" class="img-fluid" alt="Cucumber">&nbsp;&nbsp;Cucumber / కీర దోసకాయ </td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 34.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/drum.jpg" class="img-fluid" alt="Drum Stick ">&nbsp;&nbsp;Drum Stick / ములక్కాడ </td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 88.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/lady.jpg" class="img-fluid" alt="Ladies Finger">&nbsp;&nbsp;Ladies Finger / బెండకాయ </td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 36.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/raddish.jpg" class="img-fluid" alt="Radish">&nbsp;&nbsp;Radish / ముల్లంగి </td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 32.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/green.jpg" class="img-fluid" alt="Green Chilli">&nbsp;&nbsp;Green Chilli / పచ్చిమిర్చి</td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 72.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/bitter.jpg" class="img-fluid" alt="Bitter Gourd">&nbsp;&nbsp;Bitter Gourd / కాకరకాయ</td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 33.00</td>
+                                </tr>
+
+                                <tr>
+                                    <td><img src="../img/mushroom.jpg" class="img-fluid" alt="Mushroom">&nbsp;&nbsp;Mushroom / పుట్టగొడుగుల</td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 105.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/broadbeans.jpg" class="img-fluid" alt="Broad beans">&nbsp;&nbsp;Broad beans / మొట్టికాయ</td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 50.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/beetroot.jpg" class="img-fluid" alt="Beetroot">&nbsp;&nbsp;Beetroot / బీట్రూట్</td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 25.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/sweetpotato.jpg" class="img-fluid" alt="Sweet Potato">&nbsp;&nbsp;Sweet Potato / చిలగడదుంప</td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 53.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/tindoora.jpg" class="img-fluid" alt="Tindoora">&nbsp;&nbsp;Tindoora / దొండకాయ</td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 30.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/ash.jpg" class="img-fluid" alt="Ash Gourd">&nbsp;&nbsp;Ash Gourd / బూడిద గుమ్మడి కాయ</td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 100.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/bottle.jpg" class="img-fluid" alt="Bottle Gourd">&nbsp;&nbsp;Bottle Gourd / సొరకాయ</td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 28.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/pumpkin.jpg" class="img-fluid" alt="Pumpkin">&nbsp;&nbsp;Pumpkin / గుమ్మడికాయ</td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 120.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/fireld.jpg" class="img-fluid" alt="Field Beans">&nbsp;&nbsp;Field Beans / చిక్కుడుకాయ</td>
+                                    <td> 1 kg</td>
+                                    <td>Rs 45.00</td>
+                                </tr>
+
+                                <tr>
+                                    <td><img src="../img/fenu-greek.jpg" class="img-fluid" alt="Fenu greek leaves">&nbsp;&nbsp;Fenu greek leaves / మెంతి కూర</td>
+                                    <td> 1 bunch</td>
+                                    <td>Rs 10.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/curry.jpg" class="img-fluid" alt="Curry leaves">&nbsp;&nbsp;Curry leaves / కరివేపాకు</td>
+                                    <td> 1 bunch</td>
+                                    <td>Rs 10.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/coriander.jpg" class="img-fluid" alt="Coriander">&nbsp;&nbsp;Coriander / కొత్తిమీర</td>
+                                    <td> 1 bunch</td>
+                                    <td>Rs 20.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/spinach.jpg" class="img-fluid" alt="Spinach">&nbsp;&nbsp;Spinach / పాలకూర</td>
+                                    <td> 1 bunch</td>
+                                    <td>Rs 10.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/roselle.jpg" class="img-fluid" alt="Spinach">&nbsp;&nbsp;Roselle / గోంగూరా</td>
+                                    <td> 1 bunch</td>
+                                    <td>Rs 10.00</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../img/mint.jpg" class="img-fluid" alt="Mint leaves">&nbsp;&nbsp;Mint leaves / పుదీనా ఆకులు</td>
+                                    <td> 1 bunch</td>
+                                    <td>Rs 10.00</td>
+                                </tr>
+
+                                <tr>
+                                    <td><img src="../img/amaranth-leaves.jpg" class="img-fluid" alt="Amaranth Leaves">&nbsp;&nbsp;Amaranth Leaves / తోటకూర</td>
+                                    <td> 1 bunch</td>
+                                    <td>Rs 10.00</td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="Fruits" class="tabcontent ">
+            <div class="table-responsive ">
+                <table class="table table-bordered scroll ">
+                    <thead>
+                        <tr>
+                            <th class="price"><b>Fruit Name</b></th>
+                            <th class="price"><b>Quantity</b></th>
+                            <th class="price"><b>Price</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <p style="text-align: center;"><strong>Note:-</strong>All these prices are not long Every time will change</p>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/pineapple.jpg" class="img-fluid" alt="Pineapple">&nbsp;&nbsp;Pineapple/అనాస పండు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/pomo.jpg" class="img-fluid" alt="Pomegranate">&nbsp;&nbsp;Pomegranate/దానిమ్మ పండు </td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/banana.jpg" class="img-fluid" alt="Banana">&nbsp;&nbsp;Banana/>అరట పండు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                            <tr>
+                                <td><img src="../img/b-raw.jpg" class="img-fluid" alt="Banana-raw">&nbsp;&nbsp;Banana-raw/అరటికాయ</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/mango.jpg" class="img-fluid" alt="Mango">&nbsp;&nbsp;Mango/మామిడి</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/grapes.jpg" class="img-fluid" alt="Grapes">&nbsp;&nbsp;Grapes/ద్రాక్ష</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/jack.jpg" class="img-fluid" alt="Jackfruit">&nbsp;&nbsp;Jackfruit/పనస పండు</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/guava.jpg" class="img-fluid" alt="Guava">&nbsp;&nbsp;Guava/జామ</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/water-melon.jpg" class="img-fluid" alt="Water Melon">&nbsp;&nbsp;Water Melon/పుచ్చకాయ </td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/musk.jpg" class="img-fluid" alt="Musk Melon ">&nbsp;&nbsp;Musk Melon/దోసకాయ </td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/apple.jpg" class="img-fluid" alt="Apple">&nbsp;&nbsp;Apple/ఆపిల్ పండు</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/chickoo.jpg" class="img-fluid" alt="Chickoo">&nbsp;&nbsp;Chickoo/సపోటా </td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/custadr.jpg" class="img-fluid" alt="Custard apple">&nbsp;&nbsp;Custard apple/సీతాఫలం</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/dates.jpg" class="img-fluid" alt="Dates">&nbsp;&nbsp;Dates/ఖర్జూరం </td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/fig.jpg" class="img-fluid" alt="Fig">&nbsp;&nbsp;Fig/అత్తి</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/orange.jpg" class="img-fluid" alt="Orange">&nbsp;&nbsp;Orange/నారింజ</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/papaya.jpg" class="img-fluid" alt="Papaya">&nbsp;&nbsp;Papaya /బొప్పాయి</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/goose.jpg" class="img-fluid" alt="Goose Berry">&nbsp;&nbsp;Goose Berry/ఉసిరికాయ</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/coconut.jpg" class="img-fluid" alt="Coconut">&nbsp;&nbsp;Coconut/కొబ్బరికాయ</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/rawmango.jpg" class="img-fluid" alt="Raw Mango">&nbsp;&nbsp;Raw Mango/మామిడి</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/corn.jpg" class="img-fluid" alt="Corn">&nbsp;&nbsp;Corn/మొక్క జొన్న</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/cherry.jpg" class="img-fluid" alt="Cherries">&nbsp;&nbsp;Cherries/చెర్రీ పండు</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/plum.jpg" class="img-fluid" alt="Plum">&nbsp;&nbsp;Plum/రేగు</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/blackcurrant.jpg" class="img-fluid" alt="Black Current">&nbsp;&nbsp;Black Current/నల్ల కిష్మిష్</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/breadfruit.jpg" class="img-fluid" alt="Bread Fruit">&nbsp;&nbsp;Bread Fruit/Seema Panasa</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/cashewnut.jpg" class="img-fluid" alt="Cashewnut">&nbsp;&nbsp;Cashewnut/జీడి పప్పు</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/litchi.jpg" class="img-fluid" alt="Litchi">&nbsp;&nbsp;Litchi/లీచీ పండు</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/palmyrah.jpg" class="img-fluid" alt="Palmyrah">&nbsp;&nbsp;Palmyrah/తాటి</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/peach.jpg" class="img-fluid" alt="Peach">&nbsp;&nbsp;Peach/పీచ్ పండు</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/rasberries.jpg" class="img-fluid" alt="Rasberries">&nbsp;&nbsp;Rasberries/రాస్ బెర్రీస్ </td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/strawberry.jpg" class="img-fluid" alt="Straw Berry">&nbsp;&nbsp;Straw Berry/స్ట్రాబెర్రీ</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/wilddate.jpg" class="img-fluid" alt="Wild Date fruit">&nbsp;&nbsp;Wild Date fruit/ఖర్జూర పండు</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/black-plum.jpg" class="img-fluid" alt="Black plum">&nbsp;&nbsp;Black plum/నేరేడు </td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/blue-berry.jpg" class="img-fluid" alt="Black Berry">&nbsp;&nbsp;Black Berry/అల్ల నేరేడు</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                    </tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="Groceries" class="tabcontent ">
+            <div class="table-responsive ">
+                <table class="table table-bordered scroll ">
+                    <thead>
+                        <tr>
+                            <th class="price"><b>Product Name</b></th>
+                            <th class="price"><b>Quntity</b></th>
+                            <th class="price"><b>Price</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <p style="text-align: center;"><strong>Note:-</strong>All these prices are not long Every time will change</p>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/bengal-gram.jpg" class="img-fluid" alt="">&nbsp;&nbsp;Bengal Gram/శనగ పప్పు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/green-gram.jpg" class="img-fluid" alt="Green Gram">&nbsp;&nbsp;Green Gram/పెసర పప్పు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/red-gram.jpg" class="img-fluid" alt="Red Gram">&nbsp;&nbsp;Red Gram/కంది పప్పు/</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/black-gram.jpg" class="img-fluid" alt="Black Gram">&nbsp;&nbsp;Black Gram/మినపప్పు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/poppy.jpg" class="img-fluid" alt="Poppy seeds">&nbsp;&nbsp;Poppy seeds/గసగసాలు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/cor.jpg" class="img-fluid" alt="Coriander seeds">&nbsp;&nbsp;Coriander seeds/ధనియాలు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/mustard.jpg" class="img-fluid" alt="Mustard seeds">&nbsp;&nbsp;Mustard seeds/ఆవాలు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/cumin.jpg" class="img-fluid" alt="Cumin seeds">&nbsp;&nbsp;Cumin seeds/జీలకర్ర</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+
+                        </tr>
+                        <tr>
+                            <td><img src="../img/urad.jpg" class="img-fluid" alt="Urad dal">&nbsp;&nbsp;Urad dal/మినప పప్పు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/nuts.jpg" class="img-fluid" alt="Ground Nuts">&nbsp;&nbsp;Ground Nuts/పల్లీలు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/turmeric-seed.jpg" class="img-fluid" alt="Turmeric">&nbsp;&nbsp;Turmeric/పసుపు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/ajowan.jpg" class="img-fluid" alt="Ajowan">&nbsp;&nbsp;Ajowan/వాము</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                            <td>వాము</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/fenugreek.jpg" class="img-fluid" alt="Fenugreek Seeds">&nbsp;&nbsp;Fenugreek Seeds/మెంతులు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/sago.jpg" class="img-fluid" alt="Sago">&nbsp;&nbsp;Sago/సగ్గుబియ్యం</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/flattend.jpg" class="img-fluid" alt="Flattend Rice">&nbsp;&nbsp;Flattend Rice or Rice Flakes/అటుకులు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/horsegram.jpg" class="img-fluid" alt="Horse Gram">&nbsp;&nbsp;Horse Gram/ఉలవలు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/millet.jpg" class="img-fluid" alt="Millet">&nbsp;&nbsp;Millet/జొన్నలు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/maize.jpg" class="img-fluid" alt="Maize">&nbsp;&nbsp;Maize/మొక్కజొన్న</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/salt.jpg" class="img-fluid" alt="Salt">&nbsp;&nbsp;Salt/ఉప్పు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/pearl-millet.jpg" class="img-fluid" alt="Pearl Millet">&nbsp;&nbsp;Pearl Millet/సజ్జలు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/black-eyedbeans.jpg" class="img-fluid" alt="Black Eyed Beans">&nbsp;&nbsp;Black Eyed Beans/అలసందలు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/finger-millet.jpg" class="img-fluid" alt="Finger Millet">&nbsp;&nbsp;Finger Millet/రాగులు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/kidney-beans.jpg" class="img-fluid" alt="Kidney beans">&nbsp;&nbsp;Kidney beans/చిక్కడు గింజుల</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+
+
+                        <tr>
+                            <td><img src="../img/gram-flour.jpg" class="img-fluid" alt="Gram Flour">&nbsp;&nbsp;Gram Flour/శనగపిండి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/corn-flour.jpg" class="img-fluid" alt="Corn Flour">&nbsp;&nbsp;Corn Flour/మొక్కజొన్న పిండి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/wheat-flour.jpg" class="img-fluid" alt="Wheat Flour">&nbsp;&nbsp;Wheat Flour/గోధుమ పిండి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/rice-flour.jpg" class="img-fluid" alt="Rice Flour">&nbsp;&nbsp;Rice Flour/బియ్యం పిండి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/millet-flour.jpg" class="img-fluid" alt="Finger Millet flour">&nbsp;&nbsp;Finger Millet flour/రాగి పిండి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/jowar-flour.jpg" class="img-fluid" alt="Jowar Flour">&nbsp;&nbsp;Jowar Flour/జొన్నలు పిండి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/coconut-flour.jpg" class="img-fluid" alt="Coconut Flour">&nbsp;&nbsp;Coconut Flour/కొబ్బరి </td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/pearl-millet-flour.jpg" class="img-fluid" alt="Pearl Millet Flour">&nbsp;&nbsp;Pearl Millet Flour/సజ్జ పిండి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+
+
+                        <tr>
+                            <td><img src="../img/gram-flour.jpg" class="img-fluid" alt="Gram Flour">&nbsp;&nbsp;Gram Flour/శనగపిండి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/corn-flour.jpg" class="img-fluid" alt="Corn Flour">&nbsp;&nbsp;Corn Flour/మొక్కజొన్న పిండి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/wheat-flour.jpg" class="img-fluid" alt="Wheat Flour">&nbsp;&nbsp;Wheat Flour/గోధుమ పిండి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/rice-flour.jpg" class="img-fluid" alt="Rice Flour">&nbsp;&nbsp;Rice Flour/బియ్యం పిండి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/millet-flour.jpg" class="img-fluid" alt="Finger Millet flour">&nbsp;&nbsp;Finger Millet flour/రాగి పిండి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/jowar-flour.jpg" class="img-fluid" alt="Jowar Flour">&nbsp;&nbsp;Jowar Flour/జొన్నలు పిండి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/coconut-flour.jpg" class="img-fluid" alt="Coconut Flour">&nbsp;&nbsp;Coconut Flour/కొబ్బరి పిండి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/pearl-millet-flour.jpg" class="img-fluid" alt="Pearl Millet Flour">&nbsp;&nbsp;Pearl Millet Flour/సజ్జ పిండి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="../img/aniseed.jpg" class="img-fluid" alt="Aniseed">&nbsp;&nbsp;Aniseed/సొంపు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/hing.jpg" class="img-fluid" alt="Asafoetida">&nbsp;&nbsp;Asafoetida/ఇంగువ</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/bay.jpg" class="img-fluid" alt="Bay Leaf">&nbsp;&nbsp;Bay Leaf/బిర్యాని ఆకు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/pepper.jpg" class="img-fluid" alt="Black Pepper">&nbsp;&nbsp;Black Pepper/మిరియాలు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/carda.jpg" class="img-fluid" alt="Cardamom">&nbsp;&nbsp;Cardamom/ఏలకుల</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/cinnmon.jpg" class="img-fluid" alt="Cinnamon">&nbsp;&nbsp;Cinnamon/దాల్చిన </td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/cloves.jpg" class="img-fluid" alt="Cloves">&nbsp;&nbsp;Cloves/లవంగాలు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/saffron.jpg" class="img-fluid" alt="Saffron">&nbsp;&nbsp;Saffron/కుంకుమ పుష్పం</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/sopapu.jpg" class="img-fluid" alt="Fennel">&nbsp;&nbsp;Fennel/సోపు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/ginger.jpg" class="img-fluid" alt="Ginger">&nbsp;&nbsp;Ginger</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/red.jpg" class="img-fluid" alt="Red Chillies">&nbsp;&nbsp;Red Chillies/ఎండు మిరపకాయలు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/tama.jpg" class="img-fluid" alt="Tamarind">&nbsp;&nbsp;Tamarind/చింతపండు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/turmeric-seed.jpg" class="img-fluid" alt="Turmeric powder">&nbsp;&nbsp;Turmeric powder/పసుపు పొడి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/cashew.jpg" class="img-fluid" alt="Cashewnuts">&nbsp;&nbsp;Cashewnuts/జీడిపప్పు </td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/raisina.jpg" class="img-fluid" alt="Raisins">&nbsp;&nbsp;Raisins/ఎండుద్రాక్ష</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/almond.jpg" class="img-fluid" alt="Almond">&nbsp;&nbsp;Almond/బాదంపప్పు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/apricot.jpg" class="img-fluid" alt="Apricot">&nbsp;&nbsp;Apricot/సీమ బాదం</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/beetel.jpg" class="img-fluid" alt="Beetal Nut">&nbsp;&nbsp;Beetal Nut/వక్కలు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/coconut.jpg" class="img-fluid" alt="Dessicated Coconut">&nbsp;&nbsp;Dessicated Coconut/కొబ్బరి</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/dates.jpg" class="img-fluid" alt="Dried Dates">&nbsp;&nbsp;Dried Dates/ఖర్జూరం</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/fig.jpg" class="img-fluid" alt="Dried Fig">&nbsp;&nbsp;Dried Fig/అతి పళ్ళూ</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/walnut.jpg" class="img-fluid" alt="Walnut">&nbsp;&nbsp;Walnut/అక్రోటుకాయ</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/pista.jpg" class="img-fluid" alt="Pistachio">&nbsp;&nbsp;Pistachio/పిస్తా</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/poppy.jpg" class="img-fluid" alt="Poppy Seed">&nbsp;&nbsp;Poppy Seed/గసగసాల</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/peanut.jpg" class="img-fluid" alt="Peanut">&nbsp;&nbsp;Peanut/శనగ</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/flax-seeds.jpg" class="img-fluid" alt="Flax seeds">&nbsp;&nbsp;Flax seeds/అవిసె గింజలు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/sesame-seeds.jpg" class="img-fluid" alt="Sesame seeds">&nbsp;&nbsp;Sesame seeds/నువ్వు గింజలు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="../img/yogrut.jpg" class="img-fluid" alt="Yogurt">&nbsp;&nbsp;Yogurt/పెరుగు</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/raw.jpg" class="img-fluid" alt="Rice">&nbsp;&nbsp;Rice/బియ్యము </td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/rice.jpg" class="img-fluid" alt="Rice">&nbsp;&nbsp;Rice (Boiled)/ఉప్పుడు బియ్యము </td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/semo.jpg" class="img-fluid" alt="Semolina">&nbsp;&nbsp;Semolina/బొంబాయి రవ్వ</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/verm.jpg" class="img-fluid" alt="Vermicelli">&nbsp;&nbsp;Vermicelli/సేమియా</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/jaggery.jpg" class="img-fluid" alt="Jaggery">&nbsp;&nbsp;Jaggery/బెల్లము</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/honey.jpg" class="img-fluid" alt="Honey">&nbsp;&nbsp;Honey/తేనె</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/coconut.jpg" class="img-fluid" alt="Coconut">&nbsp;&nbsp;Coconut/కొబ్బరి కాయ</td>
+                            <td> 1 kg</td>
+                            <td>Rs 20.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="Bakery Items" class="tabcontent ">
+            <div class="table-responsive ">
+                <table class="table table-bordered scroll ">
+                    <thead>
+                        <tr>
+                            <h1 style="align-items: center;">Comming soon......</h1>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="Non-Veg" class="tabcontent ">
+            <div class="table-responsive ">
+                <table class="table table-bordered scroll ">
+                    <thead>
+                        <tr>
+                            <th class="price"><b>Product Name</b></th>
+                            <th class="price"><b>Quntity</b></th>
+                            <th class="price"><b>Price</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <p style="text-align: center;"><strong>Note:-</strong>All these prices are not long Every time will change</p>
+                        </tr>
+
+                        <tr>
+                            <td><img src="../img/egg.jpg" class="img-fluid" alt="Egg">&nbsp;&nbsp;Egg/కోడి గుడ్డు</td>
+                            <td> 1 No</td>
+                            <td>Rs 5.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/chicken.jpg" class="img-fluid" alt="Chicken">&nbsp;&nbsp;Chicken/కోడి మాంసం</td>
+                            <td> 1 kg</td>
+                            <td>Rs 180.00 / 200.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/mutton.jpg" class="img-fluid" alt="Mutton">&nbsp;&nbsp;Mutton/గొర్రె మాంసం</td>
+                            <td> 1 kg</td>
+                            <td>Rs 750.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/fish.jpg" class="img-fluid" alt="Fish">&nbsp;&nbsp;Fish/చేప మాంసం</td>
+                            <td> 1 kg</td>
+                            <td>Rs 170.00</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/prawn.jpg" class="img-fluid" alt="Prawn">&nbsp;&nbsp;Prawn/రొయ్యలు</td>
+                            <td> ------</td>
+                            <td>------</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="Packet Items" class="tabcontent">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered scroll">
+                        <thead>
+                            <tr>
+                                <th class="price"><b>Vegetable Name</b></th>
+                                <th class="price"><b>Quantity</b></th>
+                                <th class="price"><b>Price</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <p style="text-align: center;"><strong>Note:-</strong>All these prices are not long Every time will change</p>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/1-kg-199-oats-pouch-saffola.jpg" class="img-fluid" alt="oats-pouch-saffola">&nbsp;&nbsp;oats-pouch-saffola</td>
+                                <td>1 kg</td>
+                                <td>Rs 199.00 </td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/1-kg-20-iodized-salt-tatar.jpg" class="img-fluid" alt="iodized-salt-tatar">&nbsp;&nbsp;iodized-salt-tatar</td>
+                                <td>1 kg</td>
+                                <td>Rs 20.00 </td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/1-kg-490-nestle-everyday.jpg" class="img-fluid" alt="estle-everyday">&nbsp;&nbsp;estle-everyday</td>
+                                <td>1 kg</td>
+                                <td> Rs 490.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/100-grm-15-fat-spread-delicious.jpg" class="img-fluid" alt="spread-delicious">&nbsp;&nbsp;spread-delicious</td>
+                                <td>100-grm</td>
+                                <td>Rs 15.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/100-grm-275-gold-instant-coffee-bru.jpg" class="img-fluid" alt="gold-instant-coffee">&nbsp;&nbsp;gold-instant-coffee</td>
+                                <td>100-grm</td>
+                                <td>Rs 275.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/100-grm-48-pasteurised-amul.jpg" class="img-fluid" alt="pasteurised-amul">&nbsp;&nbsp;pasteurised-amul</td>
+                                <td>100-grm</td>
+                                <td>Rs 48.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/100-grm25turmeric-aachi-powder-.jpg" class="img-fluid" alt="turmeric-aachi-powder">&nbsp;&nbsp;turmeric-aachi-powder</td>
+                                <td> 100-grm</td>
+                                <td>Rs 25.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/100-grm34-idly-chilli-powder-aachi-powder-.jpg" class="img-fluid" alt="idly-chilli-powder-aachi-powder">&nbsp;&nbsp;idly-chilli-powder-aachi-powder్లి</td>
+                                <td> 100-grm</td>
+                                <td>Rs 34.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/100-grm43chilli-powder-box-aachi-powder.jpg" class="img-fluid" alt="chilli-powder-box-aachi-powder">&nbsp;&nbsp;chilli-powder-box-aachi-powder</td>
+                                <td>100-grm</td>
+                                <td>Rs 43.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/100-grm58mutton-masala-aachi-powder.jpg" class="img-fluid" alt="mutton-masala-aachi-powder">&nbsp;&nbsp;mutton-masala-aachi-powder</td>
+
+                                <td> 100-grm</td>
+                                <td>Rs 58.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/100grm-37sambar-masala-aachi-powder-original-.jpg" class="img-fluid" alt="sambar-masala-aachi-powder">&nbsp;&nbsp;sambar-masala-aachi-powder</td>
+                                <td> 100grm</td>
+                                <td>Rs 37.00</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../img/new item/100grm29 -coriander-aachi-powder.jpg" class="img-fluid" alt="coriander-aachi-powder">&nbsp;&nbsp;coriander-aachi-powder</td>
+                                <td> 100grm</td>
+                                <td>Rs 29.00</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../img/new item/100grm29-coriander-aachi-powder-.jpg" class="img-fluid" alt="coriander-aachi-powder ">&nbsp;&nbsp;coriander-aachi-powder </td>
+                                <td> 100grm</td>
+                                <td>Rs 29.00</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../img/new item/16-grm-10-tomato-chatpata-soup-tomato-knorr.jpg" class="img-fluid" alt="chatpata-soup-tomato-knorr">&nbsp;&nbsp;chatpata-soup-tomato-knorr </td>
+                                <td> 16-grm</td>
+                                <td>Rs 10.00</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../img/new item/1lit-114-refined-pouch-sunflower-oil-freedom.jpg" class="img-fluid" alt="refined-pouch-sunflower-oil-freedom">&nbsp;&nbsp;refined-pouch-sunflower-oil-freedom</td>
+                                <td> 1-lit</td>
+                                <td>Rs 114.00</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../img/new item/200-grm-70-roast-ground-bru.jpg" class="img-fluid" alt="roast-ground-bru">&nbsp;&nbsp;roast-ground-bru</td>
+                                <td> 200-grm</td>
+                                <td>Rs 70.00</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../img/new item/39-g-15oats-masala-coriander-saffola.jpg" class="img-fluid" alt="masala-coriander-saffola">&nbsp;&nbsp;masala-coriander-saffola</td>
+                                <td> 39-g</td>
+                                <td>Rs 15.00</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../img/new item/3x200g191-chilli-turmeric-coriander-powder-spices-combo-pouch-aachi-.jpg" class="img-fluid" alt="chilli-turmeric-coriander-powder-spices-combo-pouch-aachi">&nbsp;&nbsp;chilli-turmeric-coriander-powder-spices-combo-pouch-aachi</td>
+                                <td> 3x200g</td>
+                                <td>Rs 191.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/450-g-249-enriched-coconut-dabur-vatika.jpg" class="img-fluid" alt="enriched-coconut-dabur-vatika">&nbsp;&nbsp;enriched-coconut-dabur-vatika</td>
+                                <td> 450-g</td>
+                                <td>Rs 249.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/450-ml-199-amla-hair-oil-dabur.jpg" class="img-fluid" alt="amla-hair-oil-dabur">&nbsp;&nbsp;amla-hair-oil-dabur</td>
+                                <td> 450-ml</td>
+                                <td>Rs 199.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/1-kg-100-elbow-instant-savori.jpg" class="img-fluid" alt="elbow-instant-savori">&nbsp;&nbsp;elbow-instant-savori</td>
+                                <td> 1 kg</td>
+                                <td>Rs 100.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/1-kg-199-oats-pouch-saffola.jpg" class="img-fluid" alt="oats-pouch-saffola">&nbsp;&nbsp;oats-pouch-saffola</td>
+                                <td> 1 kg</td>
+                                <td>Rs 199.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/1-kg-20-iodized-salt-tatar.jpg" class="img-fluid" alt="iodized-salt-tatar">&nbsp;&nbsp;iodized-salt-tatar</td>
+                                <td> 1 kg</td>
+                                <td>Rs 20.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/1-kg-490-nestle-everyday.jpg" class="img-fluid" alt="nestle-everyday">&nbsp;&nbsp;Bottle nestle-everyday</td>
+                                <td> 1 kg</td>
+                                <td>Rs 490.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/100-grm-15-fat-spread-delicious.jpg" class="img-fluid" alt="fat-spread-delicious">&nbsp;&nbsp;fat-spread-delicious</td>
+                                <td> 100-grm</td>
+                                <td>Rs 15.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/new item/100-grm-275-gold-instant-coffee-bru.jpg" class="img-fluid" alt="gold-instant-coffee-bru">&nbsp;&nbsp;gold-instant-coffee-bru</td>
+                                <td> 100-grm</td>
+                                <td>Rs 275.00</td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="../img/new item/100-grm-48-pasteurised-amul.jpg" class="img-fluid" alt="pasteurised-amul">&nbsp;&nbsp;pasteurised-amul</td>
+                                <td> 100-grm</td>
+                                <td>Rs 48.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <h5 style="color: red; text-align: center;">Note:- Covid-19 Business Hours: 6:00 AM To 2:00 PM <span class="badge badge-success ">Delivery Charges applicable</span></h5>
+    </div>
+    <div class="container ">
+        <div class="row row-content align-items-center ">
+            <div class="col col-sm order-sm-first col-md ">
+                <div class="media ">
+                    <a class="navbar-brand " href="#"><img class="d-flex mr-3 img-thumbnail align-self-center " src="../img/veggi.jpg " alt="veggi " height="300 " width="300 "></a>
+                    <div class="media-body ">
+                        <h2 class="mt-0 ">Vegetables<span class="badge badge-success ">DISCOUNT 5%</span></h2>
+                        <p class="d-none d-sm-block ">We Hava a Plenty of farmers to sell the Vegetables directly from the fields. So you will get fresh and good quality of Vegetables .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center ">
+            <div class="col col-sm ">
+                <div class="media ">
+                    <div class="media-body ">
+                        <h2 class="mt-0 ">Fruits <span class="badge badge-success ">FRESH </span></h2>
+                        <p class="d-none d-sm-block ">We have good quality of Fruits from various sellers all around your area.</p>
+                    </div>
+                    <a class="navbar-brand " href="#"><img class="d-flex mr-3 img-thumbnail align-self-center " src="../img/Fruits.jpg " alt="Groceries " height="300 " width="300 "></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center ">
+            <div class="col col-sm order-sm-first col-md ">
+                <div class="media ">
+                    <a class="navbar-brand " href="#"><img class="d-flex mr-3 img-thumbnail align-self-center " src="../img/Groceries.jpg " alt="Groceries " height="300 " width="300 "></a>
+                    <div class="media-body ">
+                        <h2 class="mt-0 ">Groceries <span class="badge badge-success ">NEW STOCK </span></h2>
+                        <p class="d-none d-sm-block ">We have good quAlity of Produts from various sellers all around your area Everyday we maintain fresh stock</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center ">
+            <div class="col col-sm ">
+                <div class="media ">
+                    <div class="media-body ">
+                        <h2 class="mt-0 ">Bakery Items <span class="badge badge-success ">Tasty & Yummy </span></h2>
+                        <p class="d-none d-sm-block ">Different type of Bakery items available</p>
+                    </div>
+                    <a class="navbar-brand " href="#"><img class="d-flex mr-3 img-thumbnail align-self-center " src="../img/bakery.jpg " alt="Groceries " height="300 " width="300 "></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center ">
+            <div class="col col-sm order-sm-first col-md ">
+                <div class="media ">
+                    <a class="navbar-brand " href="#"><img class="d-flex mr-3 img-thumbnail align-self-center " src="../img/non_veg.jpg " alt="Groceries " height="300 " width="300 "></a>
+                    <div class="media-body ">
+                        <h2 class="mt-0 ">Non-Veg <span class="badge badge-success ">FRESH</span></h2>
+                        <p class="d-none d-sm-block ">Providing fresh Non-veg items to your door just oder through a call or order through website</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div style="text-align: center;">
+                    <h1><b>Grocery Store</b></h1>
+                    <h1>"Shop is on your hands"</h1>
+                    <p>Grocery Store, grocery Store is an online platform which allows consumers to directly buy goods or services from a seller over the Internet As the technologies grows we need to adapt them now a days you can access internet from everywhere
+                        So then why need worries to go shop and buy grocery
+                        <p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+
+
+    <footer class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-4 col-sm-3 align-self-center ">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="# " class="linkcolor">Home</a></li>
+                        <li><a href="aboutus.html " class="linkcolor">About us</a></li>
+                        <li><a href="contactus.html " class="linkcolor">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm align-self-center address d-none d-sm-block ">
+                    <h5>Our Address</h5>
+                    <address>
+		              6/593,Saraswathipuram<br>
+		              Railway Station, Rajampet<br>
+		              KADAPA<br>
+		           </address>
+                </div>
+                <div class="col-7 col-sm-3 align-self-center address ">
+                    <h5>Our Address</h5>
+                    <i class="fa fa-phone fa-lg "><a href="tel:+91 9490403329" class="linkcolor">Call 9490403329</a></i>
+                    <i class="fa fa-fax fa-lg "><a href="tel:+91 9581127232" class="linkcolor">Call 9581127232</a></i>
+
+                    <i class="fa fa-envelope fa-lg "></i> <a href="mailto:care@erups.in " class="linkcolor">eshop@erups.in</a>
+                </div>
+                <div class="clo-12 col-sm-3 align-self-center ">
+                    <div class="text-center ">
+                        <a class="btn btn-social-icon btn-facebook " href="https://www.facebook.com/ERUPSINDIA"><i class=" fa fa-facebook fa-lg "></i></a>
+                        <a class="btn btn-social-icon btn-linkedin " href="#"><i class="fa fa-linkedin fa-lg "></i></a>
+                        <a class="btn btn-social-icon btn-twitter " href="#"><i class="fa fa-twitter fa-lg "></i></a>
+                        <a class="btn btn-social-icon btn-google " href="# "><i class="fa fa-youtube fa-lg "></i></a>
+                        <a class="btn btn-social-icon " href="mailto:eshop@erups.in "><i class="fa fa-envelope-o fa-lg " ></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center ">
+                <div class="copyright-text text-center">
+                    <p>
+
+                        Copyright © 2020 ERUPS. All Rights Reserved.
+                        <br> Developed by
+                        <a href="https://www.erups.in/" class="linkcolor"><strong>ERUPS</strong></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js "></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js "></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+    <script>
+        function openProduct(evt, product_cate) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent ");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none ";
+            }
+            tablinks = document.getElementsByClassName("tablinks ");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active ", " ");
+            }
+            document.getElementById(product_cate).style.display = "block ";
+            evt.currentTarget.className += " active ";
+        }
+    </script>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>
